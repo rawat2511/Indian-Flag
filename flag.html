@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Masai</title>
+        <style type="text/css">
+            .flag{
+                width: 600px;
+                height: 400px;
+                top:50%;
+                left: 50%;
+                transform: translate3d(-50%,-50%, 0);
+                position: absolute;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(1fr, 3);
+            }
+            .orange{
+                background-color: #FF9933;
+            }
+            .white {
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(1fr, 18);
+            }
+            .green {
+                background-color: #138808;
+            }
+            .circle {
+                background-color: #000080;
+                grid-area: 1 / 7 / span 1 / span 4;
+                border-radius: 50%;
+            }
+            .circle-3 {
+                grid-area: 1 / 11 / span 1 / span 7;
+            }
+        </style>
+    </head>
+<body>
+    <div class="flag">
+        <div class="orange">
+        </div>
+        <div class="white">
+            <div class="circle">
+            </div>
+            <div class="circle-3">
+            </div>
+        </div>
+        <div class="green">
+        </div>
+    </div>
+</body>
+</html>
